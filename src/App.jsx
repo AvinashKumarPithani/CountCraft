@@ -7,14 +7,16 @@ function App() {
   // let counter = 26;
 
   const addValue = () => {
-    setCounter((prevCounter) => prevCounter + 1)
-    setCounter((prevCounter) => prevCounter + 1)
-    setCounter((prevCounter) => prevCounter + 1)
-    setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    setCounter(counter + 1)
     console.log(counter)
   };
   const removeValue = () => {
     setCounter(counter - 1)
+    console.log(counter)
   }
   
   return (
