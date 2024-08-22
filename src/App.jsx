@@ -8,11 +8,15 @@ function App() {
 
   const addValue = () => {
     setCounter(counter + 1)
+    setCounter(counter + 1)
+    setCounter(counter + 1)
+    setCounter(counter + 1)
+    console.log(counter)
   };
   const removeValue = () => {
     setCounter(counter - 1)
   }
-
+  
   return (
     <>
       <h1>Count Craft {counter}</h1>
