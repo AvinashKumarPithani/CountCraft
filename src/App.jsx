@@ -1,18 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  let counter = 26;
+
+  const addValue = () => {
+    counter = counter + 1;
+    console.log(counter);
+  };
 
   return (
     <>
-      <h1>React App</h1>
-      <h2>Counter Value : </h2>
-      <button>Add Value</button> {" "}
+      <h1>Counts Craft</h1>
+      <h2>Counter Value : {counter} </h2>
+      <button onClick={addValue}>Add Value</button>{" "}
       <button>Remove Value</button>
       <p>footer: </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
